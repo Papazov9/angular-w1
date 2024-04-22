@@ -1,0 +1,5 @@
+<div class="about-wrapper" (click)="toggleContent()" [ngClass]="{'active': isClicked}">
+  <h1>My Page</h1>
+  <div class="inner-wrapper" *ngIf="isClicked"><a href="https://en.wikipedia.org/wiki/HTTP_404" target="_blank" rel="noopener noreferrer">My website</a>
+  </div>
+</div>

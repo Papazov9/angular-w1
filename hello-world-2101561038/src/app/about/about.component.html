@@ -1,0 +1,8 @@
+<div class="about-wrapper" (click)="toggleContent()" [ngClass]="{'active': isClicked}">
+<h1><i [ngClass]="{'fas fa-arrow-right': !isClicked, 'fas fa-arrow-down': isClicked}"></i>About Me</h1>
+  <ul *ngIf="isClicked">
+    <li><i class="fas fa-arrow-right"></i>Name: {{about.name}}</li>
+    <li>Age: {{about.age}}</li>
+    <li>Birth Date: {{about.birthDate | date: 'dd/MM/yyyy'}}</li>
+  </ul>
+</div>

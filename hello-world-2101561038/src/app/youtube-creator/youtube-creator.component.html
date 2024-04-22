@@ -1,0 +1,15 @@
+<div
+  class="hobbies-wrapper"
+  (click)="toggleContent()"
+  [ngClass]="{ active: isClicked }"
+>
+<h1>Favorite YouTube Creator</h1>
+  <div class="hiddenSection" *ngIf="isClicked">
+    <a
+      href="https://www.youtube.com/@ThePrimeTimeagen"
+      target="_blank"
+      rel="noopener noreferrer"
+      >ThePrimeTime</a
+    >
+  </div>
+</div>

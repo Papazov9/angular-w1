@@ -1,0 +1,6 @@
+<div class="hobbies-wrapper" (click)="toggleContent()" [ngClass]="{'active': isClicked}">
+<h1>Hobbies</h1>
+<ul *ngIf="isClicked">
+  <li *ngFor="let hobby of hobbies">{{hobby.name}}</li>
+</ul>
+</div>

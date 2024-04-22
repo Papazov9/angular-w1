@@ -1,0 +1,6 @@
+<div class="about-wrapper" (click)="toggleContent()" [ngClass]="{'active': isClicked}">
+  <h1>Skills</h1>
+    <ul *ngIf="isClicked">
+      <li *ngFor="let skill of skillList">{{skill.skillName}}</li>
+    </ul>
+  </div>
